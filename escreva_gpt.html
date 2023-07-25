@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Replicação de Texto</title>
+</head>
+<body>
+    <h1>Replicar Texto</h1>
+    <label for="textoDigitado">Digite o texto:</label>
+    <!-- Utilizando a tag textarea para criar uma lacuna maior para digitação -->
+    <textarea id="textoDigitado" rows="4" cols="50"></textarea>
+    <br>
+    <button onclick="replicarTexto()">Replicar</button>
+    <p id="textoReplicado"></p>
+
+    <script>
+        function replicarTexto() {
+            // Obtém o valor digitado pelo usuário na textarea
+            var textoDigitado = document.getElementById("textoDigitado").value;
+            
+            // Exibe o texto digitado na tela, na área designada
+            document.getElementById("textoReplicado").innerText = textoDigitado;
+        }
+    </script>
+</body>
+</html>
+
+
